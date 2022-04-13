@@ -1,11 +1,11 @@
 parameters: {}
 environment: {}
 packages:
-  - name: "default"
+  - name: "v1"
     environment: {}
     parameters: {}
     actions:
-      - name: "default"
+      - name: "metadata"
         main: ''
         runtime: 'go:default'
         environment: {}
