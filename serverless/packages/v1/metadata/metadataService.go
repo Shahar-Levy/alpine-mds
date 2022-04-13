@@ -3,6 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
+	"time"
 )
 
 type Request struct {
@@ -21,6 +22,6 @@ func Main(in Request) (*Response, error) {
 	}
 
 	return &Response{
-		Body: fmt.Sprintf("Hello, from %s", in.Location),
+		Body: fmt.Sprintf("Hello, from %s, it is now %s", in.Location, time.Now().String()),
 	}, nil
 }
