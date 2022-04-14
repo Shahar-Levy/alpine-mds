@@ -8,6 +8,8 @@ packages:
       - name: "metadata"
         main: ''
         runtime: 'go:default'
-        environment: {}
+        environment:
+          NETBOX_TOKEN: "${NETBOX_TOKEN}"
+          NETBOX_HOST: "${NETBOX_HOST}"
         parameters: {}
 
